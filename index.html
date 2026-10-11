@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AkrabStore - Kuota Akrab XL & Axis Fresh 30 Hari</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-bold text-xl text-blue-600">
+        <span class="bg-blue-600 text-white p-2 rounded-xl text-sm">
+          <i class="fa-solid fa-wifi"></i>
+        </span>
+        <span class="text-blue-900 tracking-tight font-extrabold">Akrab<span class="text-blue-600">Store</span></span>
+      </a>
+      <div class="flex items-center gap-4 text-sm font-medium">
+        <a href="#katalog" class="text-slate-600 hover:text-blue-600 hidden sm:block">Katalog</a>
+        <a href="#cek-wilayah" class="text-slate-600 hover:text-blue-600 hidden sm:block">Daftar Wilayah</a>
+        <a href="#order" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Pesan Sekarang</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <header class="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-950 text-white py-14 px-4">
+    <div class="max-w-4xl mx-auto text-center space-y-4">
+      <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide border border-emerald-400/30">
+        <i class="fa-solid fa-circle-check"></i> Slot Akrab L Fresh 30 Hari Ready
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+        Suntik Kuota Akrab XL & Axis <br class="hidden sm:block">
+        <span class="text-blue-400">Garansi Masuk & Full 30 Hari</span>
+      </h1>
+      <p class="text-blue-100/90 text-xs sm:text-base max-w-2xl mx-auto">
+        Ketik nama kota domisili Anda di formulir bawah untuk langsung mengetahui pembagian Area dan estimasi kuota yang didapatkan!
+      </p>
+      <div class="pt-2 flex flex-wrap justify-center gap-3">
+        <a href="#katalog" class="bg-white text-blue-900 font-bold px-6 py-2.5 rounded-xl hover:bg-blue-50 transition shadow-lg text-sm">
+          Lihat Daftar Paket
+        </a>
+        <a href="#cek-wilayah" class="border border-white/30 text-white font-medium px-6 py-2.5 rounded-xl hover:bg-white/10 transition text-sm">
+          <i class="fa-solid fa-magnifying-glass mr-1"></i> Cek Area Kota
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= DAFTAR PAKET (KATALOG) ================= -->
+  <section id="katalog" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="text-center max-w-xl mx-auto mb-10">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Daftar Paket Akrab L Fresh</h2>
+      <p class="text-slate-500 text-xs sm:text-sm mt-1.5">Besaran total kuota tergantung area nomor Anda. Klik paket untuk langsung memesan.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Paket 1 -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-200 hover:border-blue-500 hover:shadow-lg transition flex flex-col justify-between cursor-pointer" onclick="selectPackage('AKRAB L NO KUBER', 'Rp 55.000')">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="bg-slate-100 text-slate-700 text-[11px] px-2.5 py-0.5 rounded-full font-bold">Hemat</span>
+            <span class="text-emerald-600 text-[11px] font-bold"><i class="fa-solid fa-check-circle"></i> FRESH</span>
+          </div>
+          <h3 class="text-lg font-black mt-2 text-slate-900">AKRAB L NO KUBER</h3>
+          <p class="text-[11px] text-slate-400">Tanpa Kuota Bersama</p>
+          <div class="mt-3 pb-3 border-b border-slate-100">
+            <span class="text-2xl font-black text-blue-600">Rp 55.000</span>
+          </div>
+          
+          <div class="mt-3 space-y-1.5 text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-100 font-mono">
+            <div class="flex justify-between"><span>Area 1:</span> <strong class="text-slate-800">13 - 15 GB</strong></div>
+            <div class="flex justify-between"><span>Area 2:</span> <strong class="text-slate-800">15 - 17 GB</strong></div>
+            <div class="flex justify-between"><span>Area 3:</span> <strong class="text-slate-800">20 - 22 GB</strong></div>
+            <div class="flex justify-between"><span>Area 4:</span> <strong class="text-emerald-600">30 - 32 GB</strong></div>
+          </div>
+        </div>
+        <button class="w-full mt-5 bg-slate-100 text-blue-700 font-bold py-2.5 rounded-xl text-xs hover:bg-blue-600 hover:text-white transition">Pilih Paket</button>
+      </div>
+
+      <!-- Paket 2 (Best Seller) -->
+      <div class="bg-white rounded-2xl p-5 border-2 border-blue-600 shadow-md flex flex-col justify-between relative cursor-pointer" onclick="selectPackage('AKRAB L NEW (KUBER 25)', 'Rp 73.000')">
+        <div class="absolute -top-3 right-4 bg-blue-600 text-white text-[10px] font-black px-3 py-0.5 rounded-full uppercase tracking-wide">
+          Best Seller
+        </div>
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="bg-blue-100 text-blue-700 text-[11px] px-2.5 py-0.5 rounded-full font-bold">Populer</span>
+            <span class="text-emerald-600 text-[11px] font-bold"><i class="fa-solid fa-check-circle"></i> FRESH</span>
+          </div>
+          <h3 class="text-lg font-black mt-2 text-slate-900">AKRAB L NEW (KUBER 25)</h3>
+          <p class="text-[11px] text-slate-400">Kuota Bersama 25 GB</p>
+          <div class="mt-3 pb-3 border-b border-slate-100">
+            <span class="text-2xl font-black text-blue-600">Rp 73.000</span>
+          </div>
+
+          <div class="mt-3 space-y-1.5 text-xs text-slate-600 bg-blue-50/50 p-3 rounded-xl border border-blue-100 font-mono">
+            <div class="flex justify-between"><span>Area 1:</span> <strong class="text-slate-800">38 - 40 GB</strong></div>
+            <div class="flex justify-between"><span>Area 2:</span> <strong class="text-slate-800">40 - 42 GB</strong></div>
+            <div class="flex justify-between"><span>Area 3:</span> <strong class="text-slate-800">45 - 47 GB</strong></div>
+            <div class="flex justify-between"><span>Area 4:</span> <strong class="text-emerald-600">55 - 57 GB</strong></div>
+          </div>
+        </div>
+        <button class="w-full mt-5 bg-blue-600 text-white font-bold py-2.5 rounded-xl text-xs hover:bg-blue-700 transition">Pilih Paket</button>
+      </div>
+
+      <!-- Paket 3 -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-200 hover:border-blue-500 hover:shadow-lg transition flex flex-col justify-between cursor-pointer" onclick="selectPackage('AKRAB L NEW (KUBER 50)', 'Rp 95.000')">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="bg-slate-100 text-slate-700 text-[11px] px-2.5 py-0.5 rounded-full font-bold">Paling Pas</span>
+            <span class="text-emerald-600 text-[11px] font-bold"><i class="fa-solid fa-check-circle"></i> FRESH</span>
+          </div>
+          <h3 class="text-lg font-black mt-2 text-slate-900">AKRAB L NEW (KUBER 50)</h3>
+          <p class="text-[11px] text-slate-400">Kuota Bersama 50 GB</p>
+          <div class="mt-3 pb-3 border-b border-slate-100">
+            <span class="text-2xl font-black text-blue-600">Rp 95.000</span>
+          </div>
+
+          <div class="mt-3 space-y-1.5 text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-100 font-mono">
+            <div class="flex justify-between"><span>Area 1:</span> <strong class="text-slate-800">63 - 65 GB</strong></div>
+            <div class="flex justify-between"><span>Area 2:</span> <strong class="text-slate-800">65 - 67 GB</strong></div>
+            <div class="flex justify-between"><span>Area 3:</span> <strong class="text-slate-800">70 - 72 GB</strong></div>
+            <div class="flex justify-between"><span>Area 4:</span> <strong class="text-emerald-600">80 - 82 GB</strong></div>
+          </div>
+        </div>
+        <button class="w-full mt-5 bg-slate-100 text-blue-700 font-bold py-2.5 rounded-xl text-xs hover:bg-blue-600 hover:text-white transition">Pilih Paket</button>
+      </div>
+
+      <!-- Paket 4 -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-200 hover:border-blue-500 hover:shadow-lg transition flex flex-col justify-between cursor-pointer" onclick="selectPackage('AKRAB L NEW (KUBER 75)', 'Rp 110.000')">
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="bg-purple-100 text-purple-700 text-[11px] px-2.5 py-0.5 rounded-full font-bold">Jumbo</span>
+            <span class="text-emerald-600 text-[11px] font-bold"><i class="fa-solid fa-check-circle"></i> FRESH</span>
+          </div>
+          <h3 class="text-lg font-black mt-2 text-slate-900">AKRAB L NEW (KUBER 75)</h3>
+          <p class="text-[11px] text-slate-400">Kuota Bersama 75 GB</p>
+          <div class="mt-3 pb-3 border-b border-slate-100">
+            <span class="text-2xl font-black text-blue-600">Rp 110.000</span>
+          </div>
+
+          <div class="mt-3 space-y-1.5 text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-100 font-mono">
+            <div class="flex justify-between"><span>Area 1:</span> <strong class="text-slate-800">88 - 90 GB</strong></div>
+            <div class="flex justify-between"><span>Area 2:</span> <strong class="text-slate-800">90 - 92 GB</strong></div>
+            <div class="flex justify-between"><span>Area 3:</span> <strong class="text-slate-800">95 - 97 GB</strong></div>
+            <div class="flex justify-between"><span>Area 4:</span> <strong class="text-emerald-600">105 - 107 GB</strong></div>
+          </div>
+        </div>
+        <button class="w-full mt-5 bg-slate-100 text-blue-700 font-bold py-2.5 rounded-xl text-xs hover:bg-blue-600 hover:text-white transition">Pilih Paket</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FORM PEMESANAN DILENGKAPI AUTO-DETECT ================= -->
+  <section id="order" class="bg-blue-50/70 py-14 px-4 border-y border-slate-200">
+    <div class="max-w-xl mx-auto bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-slate-200">
+      <div class="text-center mb-6">
+        <h2 class="text-2xl font-black text-slate-900">Form Pemesanan</h2>
+        <p class="text-xs text-slate-500 mt-1">Ketik nama kota Anda, sistem akan mendeteksi Area secara otomatis.</p>
+      </div>
+
+      <form id="orderForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Nama Pemesan</label>
+          <input type="text" id="custName" placeholder="Contoh: Budi" required
+            class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Nomor XL / Axis (Yang Mau Diisi)</label>
+          <input type="tel" id="custPhone" placeholder="Contoh: 087812345678" required
+            class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          <p class="text-[11px] text-slate-400 mt-1">*Pastikan nomor dalam masa aktif & tidak terhubung paket Akrab lain.</p>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Pilihan Paket Kuota</label>
+          <select id="selectedPackage" onchange="updateQuotaPreview()" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none font-medium">
+            <option value="AKRAB L NO KUBER - Rp 55.000">AKRAB L NO KUBER (Rp 55.000)</option>
+            <option value="AKRAB L NEW (KUBER 25) - Rp 73.000" selected>AKRAB L NEW (KUBER 25) (Rp 73.000)</option>
+            <option value="AKRAB L NEW (KUBER 50) - Rp 95.000">AKRAB L NEW (KUBER 50) (Rp 95.000)</option>
+            <option value="AKRAB L NEW (KUBER 75) - Rp 110.000">AKRAB L NEW (KUBER 75) (Rp 110.000)</option>
+          </select>
+        </div>
+
+        <!-- INPUT KOTA DENGAN AUTO-DETECT REALTIME -->
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Kota / Kabupaten Domisili</label>
+          <input type="text" id="custCity" placeholder="Contoh: Karawang, Surabaya, Bandung, Pekalongan" required
+            oninput="detectArea()"
+            class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+        </div>
+
+        <!-- PEMILIHAN AREA -->
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <label class="block text-xs font-bold uppercase text-slate-700">Zona Area XL / Axis</label>
+            <span id="autoBadge" class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full hidden">
+              <i class="fa-solid fa-check"></i> Terdeteksi Otomatis
+            </span>
+          </div>
+          <select id="selectedArea" onchange="updateQuotaPreview()" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            <option value="Area 1">Area 1</option>
+            <option value="Area 2">Area 2</option>
+            <option value="Area 3">Area 3</option>
+            <option value="Area 4" selected>Area 4</option>
+            <option value="Belum Tahu">Belum Tahu (Tanyakan Admin)</option>
+          </select>
+        </div>
+
+        <!-- KOTAK NOTIFIKASI ESTIMASI KUOTA REALTIME -->
+        <div id="quotaPreviewBox" class="p-3.5 bg-emerald-50 border border-emerald-200 rounded-2xl text-xs space-y-1">
+          <div class="flex items-center gap-1.5 text-emerald-800 font-bold">
+            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+            <span id="previewTitle">Estimasi Kuota yang Didapat:</span>
+          </div>
+          <p class="text-emerald-700 font-black text-base" id="previewQuota">55 - 57 GB</p>
+          <p class="text-slate-500 text-[11px]" id="previewDesc">Untuk wilayah Kab. Karawang (Area 4) pada paket Akrab L Kuber 25.</p>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Metode Pembayaran</label>
+          <select id="paymentMethod" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            <option value="QRIS (Semua E-Wallet / Mobile Banking)">QRIS (All E-Wallet / All Bank)</option>
+            <option value="Transfer Bank BCA">Transfer Bank BCA</option>
+            <option value="Transfer Bank BRI">Transfer Bank BRI</option>
+            <option value="Transfer Bank Mandiri">Transfer Bank Mandiri</option>
+            <option value="Saldo DANA / ShopeePay">DANA / ShopeePay</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full mt-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 transition shadow-md shadow-emerald-600/20">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Kirim Pesanan ke WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= CARI WILAYAH & REFERENSI LENGKAP ================= -->
+  <section id="cek-wilayah" class="max-w-4xl mx-auto px-4 py-12">
+    <div class="text-center mb-6">
+      <h2 class="text-xl sm:text-2xl font-black text-slate-900">Cek Zona Area Seluruh Indonesia</h2>
+      <p class="text-xs sm:text-sm text-slate-500">Cari nama kota/kabupaten Anda di kolom pencarian instan di bawah ini.</p>
+    </div>
+
+    <!-- PENCARIAN LIVE -->
+    <div class="max-w-md mx-auto mb-8">
+      <div class="relative">
+        <input type="text" id="areaSearchInput" onkeyup="searchLiveArea()" placeholder="Ketik nama kota... (misal: Karawang, Surabaya, Medan, Makassar)"
+          class="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-300 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400"></i>
+      </div>
+      <div id="searchResultBox" class="mt-2 hidden p-3 bg-blue-50 border border-blue-200 rounded-xl text-xs text-blue-950"></div>
+    </div>
+
+    <!-- DAFTAR AREA PER PULAU (SESUAI DAFTAR AKURAT) -->
+    <div class="space-y-4 text-xs">
+      
+      <!-- PULAU JAWA -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <h3 class="text-sm font-black text-blue-900 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-map-location-dot text-blue-600"></i> Pulau Jawa & DIY
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-600">
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+            <span class="font-bold text-blue-600 block mb-1">Banten</span>
+            <p><strong>Area 2:</strong> Kota Tangsel, Kota Tangerang, Kab. Tangerang, Kab. Pandeglang, Kab. Lebak, Kab. Serang, Kota Serang, Kota Cilegon.</p>
+          </div>
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+            <span class="font-bold text-blue-600 block mb-1">DKI Jakarta</span>
+            <p><strong>Area 2:</strong> Jakarta Pusat, Selatan, Barat, Timur, Utara.</p>
+            <p><strong>Area 3:</strong> Kab. Kepulauan Seribu.</p>
+          </div>
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+            <span class="font-bold text-blue-600 block mb-1">Jawa Barat</span>
+            <p><strong>Area 1:</strong> Kab/Kota Bandung, Kuningan, Purwakarta.</p>
+            <p><strong>Area 2:</strong> Bandung Barat, Cimahi, Cirebon (Kab/Kota), Indramayu, Subang.</p>
+            <p><strong>Area 3:</strong> Bogor (Kab/Kota), Depok, Bekasi (Kab/Kota), Banjar, Ciamis, Tasikmalaya (Kab/Kota), Majalengka, Sumedang, Garut.</p>
+            <p class="text-emerald-700 font-semibold mt-1"><strong>Area 4:</strong> Kab. Karawang, Cianjur, Pangandaran, Sukabumi (Kab/Kota).</p>
+          </div>
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+            <span class="font-bold text-blue-600 block mb-1">Jawa Tengah</span>
+            <p><strong>Area 2:</strong> Tegal (Kab/Kota), Surakarta (Solo), Brebes, Kebumen, Pemalang, Kota Semarang.</p>
+            <p><strong>Area 3:</strong> Boyolali, Salatiga, Kab. Semarang, Cilacap, Grobogan, Kendal, Rembang.</p>
+            <p><strong>Area 4:</strong> Pekalongan (Kab/Kota), Batang, Purbalingga, Kudus, Sukoharjo, Klaten, Magelang (Kab/Kota), Banyumas, Temanggung, Sragen, Banjarnegara, Karanganyar, Wonosobo, Jepara, Demak, Purworejo, Blora, Wonogiri, Pati.</p>
+          </div>
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+            <span class="font-bold text-blue-600 block mb-1">Jawa Timur</span>
+            <p><strong>Area 2:</strong> Surabaya, Sidoarjo, Probolinggo Kota, Bangkalan, Banyuwangi, Sampang, Pamekasan, Sumenep, Pacitan.</p>
+            <p><strong>Area 3:</strong> Lumajang, Kab. Probolinggo.</p>
+            <p><strong>Area 4:</strong> Jombang, Blitar, Kediri, Lamongan, Ngawi, Mojokerto, Magetan, Gresik, Tulungagung, Nganjuk, Pasuruan, Bojonegoro, Madiun, Bondowoso, Tuban, Situbondo, Jember, Malang, Ponorogo, Batu, Trenggalek.</p>
+          </div>
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+            <span class="font-bold text-blue-600 block mb-1">DI Yogyakarta</span>
+            <p><strong>Area 1:</strong> Seluruh DIY (Kulon Progo, Kota Yogyakarta, Sleman, Bantul, Gunungkidul).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PULAU SUMATERA -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <h3 class="text-sm font-black text-blue-900 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-map-location-dot text-blue-600"></i> Pulau Sumatera
+        </h3>
+        <p class="text-slate-600 leading-relaxed">
+          <strong>Aceh:</strong> Area 2 (Aceh Barat Daya, Aceh Besar, Sabang, Gayo Lues), Area 3 (Aceh Jaya/Selatan/Tenggara, Nagan Raya, Banda Aceh), Area 4 (Lhokseumawe, Langsa, Bireuen, Pidie, dll).<br>
+          <strong>Sumut:</strong> Area 2 (Medan, Karo, Dairi), Area 3 (Binjai, Deli Serdang, Langkat, Asahan, dll), Area 4 (Pematangsiantar, Tapanuli, Simalungun, dll).<br>
+          <strong>Sumbar & Riau:</strong> Area 2 (Pekanbaru, Mentawai), Area 3 (Padang, Dumai, Kampar, Siak, Bengkalis, dll), Area 4 (Bukittinggi, Solok, Rokan Hulu, dll).<br>
+          <strong>Babel & Kepri:</strong> Area 2 (Batam, Pangkal Pinang, Belitung), Area 3 (Bintan, Karimun, Tanjung Pinang, Bangka), Area 4 (Natuna, Anambas, Lingga).<br>
+          <strong>Sumsel & Lampung:</strong> Area 3 (Palembang, Banyuasin, Bandar Lampung, Metro, Pringsewu), Area 4 (Lahat, Lubuklinggau, Prabumulih, Lampung Utara/Barat, dll).<br>
+          <strong>Bengkulu & Jambi:</strong> Area 3 (Seluma, Kota Jambi, Muaro Jambi), Area 4 (Bengkulu Kota/Kab, Kerinci, Bungo, Sungai Penuh).
+        </p>
+      </div>
+
+      <!-- KALIMANTAN & SULAWESI -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <h3 class="text-sm font-black text-blue-900 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-map-location-dot text-blue-600"></i> Kalimantan, Sulawesi & Nusa Tenggara
+        </h3>
+        <p class="text-slate-600 leading-relaxed">
+          <strong>Kalimantan:</strong> Kalsel Area 2 (Banjarmasin, Banjarbaru, Tabalong, dll), Kalteng Area 3 (Palangkaraya, Kapuas), Seluruh Kalbar, Kaltim (Balikpapan, Samarinda), Kaltara masuk Area 4.<br>
+          <strong>Sulawesi:</strong> Area 2 (Parepare, Barru, Pinrang, Mamuju Tengah, Wakatobi), Area 3 (Palu, Bau Bau, Majene, Sinjai, Tana Toraja), Area 4 (Makassar, Gowa, Maros, Bone, Manado, Kendari, Gorontalo, dll).<br>
+          <strong>Bali & Nusra:</strong> Bali Area 1 (Buleleng, Jembrana), Bali Area 2 (Denpasar, Badung, Gianyar, dll). NTB Area 2 (Mataram, Lombok Barat/Timur/Tengah, Sumbawa), Seluruh NTT & Bima Kab masuk Area 4.
+        </p>
+      </div>
+
+      <!-- MALUKU & PAPUA -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <h3 class="text-sm font-black text-emerald-800 mb-2 flex items-center gap-2">
+          <i class="fa-solid fa-star text-amber-500"></i> Maluku, Maluku Utara & Seluruh Pulau Papua
+        </h3>
+        <p class="text-slate-600 leading-relaxed font-semibold">
+          Seluruh wilayah Maluku, Maluku Utara, Papua, dan Papua Barat masuk ke dalam <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-black">AREA 1</span>.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-900 text-slate-400 py-6 px-4 text-center text-xs border-t border-slate-800">
+    <p>&copy; 2026 AkrabStore. Spesialis Suntik Paket Akrab XL & Axis.</p>
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    const ADMIN_WHATSAPP = "6285183002622";
+
+    // DATABASE NASIONAL BERDASARKAN DAFTAR AKURAT ANDA
+    const regionDatabase = [
+      // Banten
+      { name: "tangerang selatan", label: "Kota Tangerang Selatan (Banten)", area: 2 },
+      { name: "tangsel", label: "Kota Tangerang Selatan (Banten)", area: 2 },
+      { name: "tangerang", label: "Kota/Kab Tangerang (Banten)", area: 2 },
+      { name: "pandeglang", label: "Kab. Pandeglang (Banten)", area: 2 },
+      { name: "lebak", label: "Kab. Lebak (Banten)", area: 2 },
+      { name: "serang", label: "Kota/Kab Serang (Banten)", area: 2 },
+      { name: "cilegon", label: "Kota Cilegon (Banten)", area: 2 },
+
+      // Jakarta
+      { name: "jakarta pusat", label: "Kota Jakarta Pusat (DKI Jakarta)", area: 2 },
+      { name: "jakarta selatan", label: "Kota Jakarta Selatan (DKI Jakarta)", area: 2 },
+      { name: "jakarta barat", label: "Kota Jakarta Barat (DKI Jakarta)", area: 2 },
+      { name: "jakarta timur", label: "Kota Jakarta Timur (DKI Jakarta)", area: 2 },
+      { name: "jakarta utara", label: "Kota Jakarta Utara (DKI Jakarta)", area: 2 },
+      { name: "jakarta", label: "DKI Jakarta", area: 2 },
+      { name: "kepulauan seribu", label: "Kab. Kepulauan Seribu (DKI Jakarta)", area: 3 },
+
+      // Jawa Barat
+      { name: "bandung barat", label: "Kab. Bandung Barat (Jawa Barat)", area: 2 },
+      { name: "bandung", label: "Kota/Kab Bandung (Jawa Barat)", area: 1 },
+      { name: "kuningan", label: "Kab. Kuningan (Jawa Barat)", area: 1 },
+      { name: "purwakarta", label: "Kab. Purwakarta (Jawa Barat)", area: 1 },
+      { name: "cimahi", label: "Kota Cimahi (Jawa Barat)", area: 2 },
+      { name: "cirebon", label: "Kota/Kab Cirebon (Jawa Barat)", area: 2 },
+      { name: "indramayu", label: "Kab. Indramayu (Jawa Barat)", area: 2 },
+      { name: "subang", label: "Kab. Subang (Jawa Barat)", area: 2 },
+      { name: "bogor", label: "Kota/Kab Bogor (Jawa Barat)", area: 3 },
+      { name: "depok", label: "Kota Depok (Jawa Barat)", area: 3 },
+      { name: "bekasi", label: "Kota/Kab Bekasi (Jawa Barat)", area: 3 },
+      { name: "banjar", label: "Kota Banjar (Jawa Barat)", area: 3 },
+      { name: "ciamis", label: "Kab. Ciamis (Jawa Barat)", area: 3 },
+      { name: "tasikmalaya", label: "Kota/Kab Tasikmalaya (Jawa Barat)", area: 3 },
+      { name: "majalengka", label: "Kab. Majalengka (Jawa Barat)", area: 3 },
+      { name: "sumedang", label: "Kab. Sumedang (Jawa Barat)", area: 3 },
+      { name: "garut", label: "Kab. Garut (Jawa Barat)", area: 3 },
+      // AREA 4 JABAR
+      { name: "cianjur", label: "Kab. Cianjur (Jawa Barat)", area: 4 },
+      { name: "pangandaran", label: "Kab. Pangandaran (Jawa Barat)", area: 4 },
+      { name: "karawang", label: "Kab. Karawang (Jawa Barat)", area: 4 },
+      { name: "sukabumi", label: "Kota/Kab Sukabumi (Jawa Barat)", area: 4 },
+
+      // Jawa Tengah
+      { name: "tegal", label: "Kota/Kab Tegal (Jawa Tengah)", area: 2 },
+      { name: "surakarta", label: "Kota Surakarta / Solo (Jawa Tengah)", area: 2 },
+      { name: "solo", label: "Kota Solo / Surakarta (Jawa Tengah)", area: 2 },
+      { name: "brebes", label: "Kab. Brebes (Jawa Tengah)", area: 2 },
+      { name: "kebumen", label: "Kab. Kebumen (Jawa Tengah)", area: 2 },
+      { name: "pemalang", label: "Kab. Pemalang (Jawa Tengah)", area: 2 },
+      { name: "semarang", label: "Kota/Kab Semarang (Jawa Tengah)", area: 2 },
+      { name: "boyolali", label: "Kab. Boyolali (Jawa Tengah)", area: 3 },
+      { name: "salatiga", label: "Kota Salatiga (Jawa Tengah)", area: 3 },
+      { name: "cilacap", label: "Kab. Cilacap (Jawa Tengah)", area: 3 },
+      { name: "grobogan", label: "Kab. Grobogan / Purwodadi (Jawa Tengah)", area: 3 },
+      { name: "purwodadi", label: "Kab. Grobogan / Purwodadi (Jawa Tengah)", area: 3 },
+      { name: "kendal", label: "Kab. Kendal (Jawa Tengah)", area: 3 },
+      { name: "rembang", label: "Kab. Rembang (Jawa Tengah)", area: 3 },
+      { name: "pekalongan", label: "Kota/Kab Pekalongan (Jawa Tengah)", area: 4 },
+      { name: "batang", label: "Kab. Batang (Jawa Tengah)", area: 4 },
+      { name: "purbalingga", label: "Kab. Purbalingga (Jawa Tengah)", area: 4 },
+      { name: "kudus", label: "Kab. Kudus (Jawa Tengah)", area: 4 },
+      { name: "sukoharjo", label: "Kab. Sukoharjo (Jawa Tengah)", area: 4 },
+      { name: "klaten", label: "Kab. Klaten (Jawa Tengah)", area: 4 },
+      { name: "magelang", label: "Kota/Kab Magelang (Jawa Tengah)", area: 4 },
+      { name: "banyumas", label: "Kab. Banyumas / Purwokerto (Jawa Tengah)", area: 4 },
+      { name: "purwokerto", label: "Kab. Banyumas / Purwokerto (Jawa Tengah)", area: 4 },
+      { name: "temanggung", label: "Kab. Temanggung (Jawa Tengah)", area: 4 },
+      { name: "sragen", label: "Kab. Sragen (Jawa Tengah)", area: 4 },
+      { name: "banjarnegara", label: "Kab. Banjarnegara (Jawa Tengah)", area: 4 },
+      { name: "karanganyar", label: "Kab. Karanganyar (Jawa Tengah)", area: 4 },
+      { name: "wonosobo", label: "Kab. Wonosobo (Jawa Tengah)", area: 4 },
+      { name: "jepara", label: "Kab. Jepara (Jawa Tengah)", area: 4 },
+      { name: "demak", label: "Kab. Demak (Jawa Tengah)", area: 4 },
+      { name: "purworejo", label: "Kab. Purworejo (Jawa Tengah)", area: 4 },
+      { name: "blora", label: "Kab. Blora (Jawa Tengah)", area: 4 },
+      { name: "wonogiri", label: "Kab. Wonogiri (Jawa Tengah)", area: 4 },
+      { name: "pati", label: "Kab. Pati (Jawa Tengah)", area: 4 },
+
+      // Jawa Timur
+      { name: "probolinggo", label: "Kota/Kab Probolinggo (Jawa Timur)", area: 2 },
+      { name: "bangkalan", label: "Kab. Bangkalan (Jawa Timur)", area: 2 },
+      { name: "sidoarjo", label: "Kab. Sidoarjo (Jawa Timur)", area: 2 },
+      { name: "banyuwangi", label: "Kab. Banyuwangi (Jawa Timur)", area: 2 },
+      { name: "surabaya", label: "Kota Surabaya (Jawa Timur)", area: 2 },
+      { name: "sampang", label: "Kab. Sampang (Jawa Timur)", area: 2 },
+      { name: "pamekasan", label: "Kab. Pamekasan (Jawa Timur)", area: 2 },
+      { name: "sumenep", label: "Kab. Sumenep (Jawa Timur)", area: 2 },
+      { name: "pacitan", label: "Kab. Pacitan (Jawa Timur)", area: 2 },
+      { name: "lumajang", label: "Kab. Lumajang (Jawa Timur)", area: 3 },
+      { name: "jombang", label: "Kab. Jombang (Jawa Timur)", area: 4 },
+      { name: "blitar", label: "Kota/Kab Blitar (Jawa Timur)", area: 4 },
+      { name: "kediri", label: "Kota/Kab Kediri (Jawa Timur)", area: 4 },
+      { name: "lamongan", label: "Kab. Lamongan (Jawa Timur)", area: 4 },
+      { name: "ngawi", label: "Kab. Ngawi (Jawa Timur)", area: 4 },
+      { name: "mojokerto", label: "Kota/Kab Mojokerto (Jawa Timur)", area: 4 },
+      { name: "magetan", label: "Kab. Magetan (Jawa Timur)", area: 4 },
+      { name: "gresik", label: "Kab. Gresik (Jawa Timur)", area: 4 },
+      { name: "tulungagung", label: "Kab. Tulungagung (Jawa Timur)", area: 4 },
+      { name: "nganjuk", label: "Kab. Nganjuk (Jawa Timur)", area: 4 },
+      { name: "pasuruan", label: "Kota/Kab Pasuruan (Jawa Timur)", area: 4 },
+      { name: "bojonegoro", label: "Kab. Bojonegoro (Jawa Timur)", area: 4 },
+      { name: "madiun", label: "Kota/Kab Madiun (Jawa Timur)", area: 4 },
+      { name: "bondowoso", label: "Kab. Bondowoso (Jawa Timur)", area: 4 },
+      { name: "tuban", label: "Kab. Tuban (Jawa Timur)", area: 4 },
+      { name: "situbondo", label: "Kab. Situbondo (Jawa Timur)", area: 4 },
+      { name: "jember", label: "Kab. Jember (Jawa Timur)", area: 4 },
+      { name: "malang", label: "Kota/Kab Malang (Jawa Timur)", area: 4 },
+      { name: "ponorogo", label: "Kab. Ponorogo (Jawa Timur)", area: 4 },
+      { name: "batu", label: "Kota Batu (Jawa Timur)", area: 4 },
+      { name: "trenggalek", label: "Kab. Trenggalek (Jawa Timur)", area: 4 },
+
+      // DI Yogyakarta
+      { name: "kulon progo", label: "Kab. Kulon Progo (DIY)", area: 1 },
+      { name: "yogyakarta", label: "Kota Yogyakarta (DIY)", area: 1 },
+      { name: "jogja", label: "Kota Yogyakarta (DIY)", area: 1 },
+      { name: "sleman", label: "Kab. Sleman (DIY)", area: 1 },
+      { name: "bantul", label: "Kab. Bantul (DIY)", area: 1 },
+      { name: "gunungkidul", label: "Kab. Gunungkidul (DIY)", area: 1 },
+
+      // Sumatera Populer
+      { name: "aceh besar", label: "Kab. Aceh Besar (Aceh)", area: 2 },
+      { name: "sabang", label: "Kota Sabang (Aceh)", area: 2 },
+      { name: "banda aceh", label: "Kota Banda Aceh (Aceh)", area: 3 },
+      { name: "lhokseumawe", label: "Kota Lhokseumawe (Aceh)", area: 4 },
+      { name: "langsa", label: "Kota Langsa (Aceh)", area: 4 },
+      { name: "bireuen", label: "Kab. Bireuen (Aceh)", area: 4 },
+      { name: "medan", label: "Kota Medan (Sumatera Utara)", area: 2 },
+      { name: "deli serdang", label: "Kab. Deli Serdang (Sumatera Utara)", area: 3 },
+      { name: "binjai", label: "Kota Binjai (Sumatera Utara)", area: 3 },
+      { name: "asahan", label: "Kab. Asahan (Sumatera Utara)", area: 3 },
+      { name: "pematangsiantar", label: "Kota Pematangsiantar (Sumatera Utara)", area: 4 },
+      { name: "padang", label: "Kota Padang (Sumatera Barat)", area: 3 },
+      { name: "bukittinggi", label: "Kota Bukittinggi (Sumatera Barat)", area: 4 },
+      { name: "pekanbaru", label: "Kota Pekanbaru (Riau)", area: 2 },
+      { name: "dumai", label: "Kota Dumai (Riau)", area: 3 },
+      { name: "batam", label: "Kota Batam (Kepulauan Riau)", area: 2 },
+      { name: "tanjung pinang", label: "Kota Tanjung Pinang (Kepulauan Riau)", area: 3 },
+      { name: "jambi", label: "Kota Jambi (Jambi)", area: 3 },
+      { name: "palembang", label: "Kota Palembang (Sumatera Selatan)", area: 3 },
+      { name: "pangkal pinang", label: "Kota Pangkal Pinang (Babel)", area: 2 },
+      { name: "bandar lampung", label: "Kota Bandar Lampung (Lampung)", area: 3 },
+      { name: "metro", label: "Kota Metro (Lampung)", area: 3 },
+
+      // Kalimantan & Sulawesi Populer
+      { name: "pontianak", label: "Kota Pontianak (Kalbar)", area: 4 },
+      { name: "banjarmasin", label: "Kota Banjarmasin (Kalsel)", area: 2 },
+      { name: "banjarbaru", label: "Kota Banjarbaru (Kalsel)", area: 2 },
+      { name: "palangkaraya", label: "Kota Palangkaraya (Kalteng)", area: 3 },
+      { name: "balikpapan", label: "Kota Balikpapan (Kaltim)", area: 4 },
+      { name: "samarinda", label: "Kota Samarinda (Kaltim)", area: 4 },
+      { name: "tarakan", label: "Kota Tarakan (Kaltara)", area: 4 },
+      { name: "makassar", label: "Kota Makassar (Sulsel)", area: 4 },
+      { name: "gowa", label: "Kab. Gowa (Sulsel)", area: 4 },
+      { name: "maros", label: "Kab. Maros (Sulsel)", area: 4 },
+      { name: "palopo", label: "Kota Palopo (Sulsel)", area: 4 },
+      { name: "parepare", label: "Kota Pare Pare (Sulsel)", area: 2 },
+      { name: "manado", label: "Kota Manado (Sulut)", area: 4 },
+      { name: "palu", label: "Kota Palu (Sulteng)", area: 3 },
+      { name: "kendari", label: "Kota Kendari (Sultra)", area: 4 },
+
+      // Bali, Nusra, Maluku & Papua
+      { name: "denpasar", label: "Kota Denpasar (Bali)", area: 2 },
+      { name: "badung", label: "Kab. Badung (Bali)", area: 2 },
+      { name: "buleleng", label: "Kab. Buleleng (Bali)", area: 1 },
+      { name: "jembrana", label: "Kab. Jembrana (Bali)", area: 1 },
+      { name: "mataram", label: "Kota Mataram (NTB)", area: 2 },
+      { name: "kupang", label: "Kota Kupang (NTT)", area: 4 },
+      { name: "ambon", label: "Kota Ambon (Maluku)", area: 1 },
+      { name: "ternate", label: "Kota Ternate (Maluku Utara)", area: 1 },
+      { name: "jayapura", label: "Kota Jayapura (Papua)", area: 1 },
+      { name: "sorong", label: "Kota Sorong (Papua Barat)", area: 1 },
+      { name: "merauke", label: "Kab. Merauke (Papua)", area: 1 },
+      { name: "timika", label: "Kab. Mimika / Timika (Papua)", area: 1 }
+    ];
+
+    // MATRIKS KUOTA
+    const quotaMatrix = {
+      "AKRAB L NO KUBER": {
+        "Area 1": "13 - 15 GB",
+        "Area 2": "15 - 17 GB",
+        "Area 3": "20 - 22 GB",
+        "Area 4": "30 - 32 GB"
+      },
+      "AKRAB L NEW (KUBER 25)": {
+        "Area 1": "38 - 40 GB",
+        "Area 2": "40 - 42 GB",
+        "Area 3": "45 - 47 GB",
+        "Area 4": "55 - 57 GB"
+      },
+      "AKRAB L NEW (KUBER 50)": {
+        "Area 1": "63 - 65 GB",
+        "Area 2": "65 - 67 GB",
+        "Area 3": "70 - 72 GB",
+        "Area 4": "80 - 82 GB"
+      },
+      "AKRAB L NEW (KUBER 75)": {
+        "Area 1": "88 - 90 GB",
+        "Area 2": "90 - 92 GB",
+        "Area 3": "95 - 97 GB",
+        "Area 4": "105 - 107 GB"
+      }
+    };
+
+    // FUNGSI DETEKSI AREA
+    function detectArea() {
+      const input = document.getElementById("custCity").value.toLowerCase().replace(/kota|kabupaten|kab\./g, "").trim();
+      const areaSelect = document.getElementById("selectedArea");
+      const badge = document.getElementById("autoBadge");
+
+      let matched = null;
+
+      if (input.length >= 3) {
+        // Cari nama terpanjang yang cocok untuk menghindari konflik (misal: Bandung Barat vs Bandung)
+        const sorted = [...regionDatabase].sort((a,b) => b.name.length - a.name.length);
+        for (const item of sorted) {
+          if (input.includes(item.name) || item.name.includes(input)) {
+            matched = item;
+            break;
+          }
+        }
+      }
+
+      if (matched) {
+        areaSelect.value = `Area ${matched.area}`;
+        badge.classList.remove("hidden");
+        document.getElementById("previewDesc").textContent = `Untuk wilayah ${matched.label} (Area ${matched.area}).`;
+      } else {
+        badge.classList.add("hidden");
+        document.getElementById("previewDesc").textContent = `Untuk wilayah Anda (${areaSelect.value}).`;
+      }
+
+      updateQuotaPreview();
+    }
+
+    // UPDATE PREVIEW ESTIMASI KUOTA
+    function updateQuotaPreview() {
+      const pkgVal = document.getElementById("selectedPackage").value;
+      const areaVal = document.getElementById("selectedArea").value;
+
+      let pkgKey = "AKRAB L NEW (KUBER 25)";
+      if (pkgVal.includes("NO KUBER")) pkgKey = "AKRAB L NO KUBER";
+      else if (pkgVal.includes("KUBER 50")) pkgKey = "AKRAB L NEW (KUBER 50)";
+      else if (pkgVal.includes("KUBER 75")) pkgKey = "AKRAB L NEW (KUBER 75)";
+
+      const previewQuota = document.getElementById("previewQuota");
+
+      if (areaVal === "Belum Tahu") {
+        previewQuota.textContent = "Menunggu Konfirmasi Admin";
+      } else {
+        const quota = quotaMatrix[pkgKey][areaVal] || "-";
+        previewQuota.textContent = quota;
+      }
+    }
+
+    // PENCARIAN INSTAN DI MENU REFERENSI
+    function searchLiveArea() {
+      const q = document.getElementById("areaSearchInput").value.toLowerCase().replace(/kota|kabupaten|kab\./g, "").trim();
+      const box = document.getElementById("searchResultBox");
+
+      if (q.length < 2) {
+        box.classList.add("hidden");
+        return;
+      }
+
+      const matches = regionDatabase.filter(item => item.name.includes(q) || item.label.toLowerCase().includes(q));
+
+      if (matches.length > 0) {
+        box.classList.remove("hidden");
+        box.innerHTML = matches.slice(0, 6).map(m => 
+          `<div class="py-1.5 flex justify-between items-center border-b border-blue-100 last:border-none">
+            <span class="font-semibold">${m.label}</span>
+            <span class="text-blue-700 font-extrabold bg-blue-100 px-2.5 py-0.5 rounded-full text-[11px]">Area ${m.area}</span>
+          </div>`
+        ).join("");
+      } else {
+        box.classList.remove("hidden");
+        box.innerHTML = `<span class="text-slate-500">Kota tidak terdaftar langsung, umumnya masuk Area 4 (Pedalaman/Luar Jawa).</span>`;
+      }
+    }
+
+    function selectPackage(name, price) {
+      const select = document.getElementById("selectedPackage");
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value.includes(name)) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+      updateQuotaPreview();
+      document.getElementById("order").scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // KIRIM PESANAN KE WHATSAPP
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("custName").value.trim();
+      const phone = document.getElementById("custPhone").value.trim();
+      const city = document.getElementById("custCity").value.trim();
+      const area = document.getElementById("selectedArea").value;
+      const pkg = document.getElementById("selectedPackage").value;
+      const payment = document.getElementById("paymentMethod").value;
+      const quota = document.getElementById("previewQuota").textContent;
+
+      const text = `Halo Admin AkrabStore, saya mau order Kuota Akrab:%0A%0A` +
+                   `👤 *Nama:* ${encodeURIComponent(name)}%0A` +
+                   `📱 *Nomor XL/Axis:* ${encodeURIComponent(phone)}%0A` +
+                   `📍 *Domisili:* ${encodeURIComponent(city)} (${encodeURIComponent(area)})%0A` +
+                   `📦 *Paket:* ${encodeURIComponent(pkg)}%0A` +
+                   `📊 *Estimasi Kuota:* ${encodeURIComponent(quota)}%0A` +
+                   `💳 *Pembayaran:* ${encodeURIComponent(payment)}%0A%0A` +
+                   `Mohon info rekening/QRIS untuk pembayaran. Terima kasih!`;
+
+      window.location.href = `https://api.whatsapp.com/send?phone=${ADMIN_WHATSAPP}&text=${text}`;
+    });
+
+    // Inisialisasi awal
+    updateQuotaPreview();
+  </script>
+</body>
+</html>
